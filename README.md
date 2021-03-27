@@ -30,4 +30,7 @@ pt_pin=***
 pt_key=****;pt_pin=***&pt_key=****;pt_pin=***
 ```
 
-/1
+/
+var CV = '单引号里面放第六步拿到的完整cookie';
+var CookieValue = CV.match(/pt_pin=.+?;/) + CV.match(/pt_key=.+?;/);
+copy(CookieValue);
